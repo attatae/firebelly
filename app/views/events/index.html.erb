@@ -1,0 +1,35 @@
+<div class="page-header">
+  <h1>All Events</h1>
+</div>
+
+<%= link_to 'New Event', new_event_path, class: "btn btn-primary" %>
+<div id="post-btn-margin">
+</div>
+
+<% @events.each do |event| %>
+<div class="event">
+  <span id="event-title-underline"><span id="event-index-title"><%= link_to event.title, event %></span></span>
+  <p>
+
+  <%= event.text %><span class ="admin">
+      | <%= link_to "Edit", edit_event_path(event) %> |
+      <%= link_to "Delete", event, method: :delete, data: { confirm: "Are you sure?"} %>
+    </span>
+  </p>
+
+  <div class="meta">
+    
+    <!--<span class="text">
+    <%= time_ago_in_words(event.created_at) + " ago" %>
+    </span>-->
+    
+  </div>
+</div>
+<% end %>
+
+
+
+
+
+
+

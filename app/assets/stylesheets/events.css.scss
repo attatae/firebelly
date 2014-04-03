@@ -1,0 +1,73 @@
+// Place all the styles related to the events controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.event {
+	
+}
+
+.event-present {
+	border: 1px solid white;/*
+	background: #FCFCFC;
+	border-top-left-radius: 10px;
+	border-bottom-right-radius: 10px;*/
+
+	/*border-top-left-radius: 10px;
+	border-bottom-right-radius: 10px;*/
+}
+
+/*.comments {
+
+	background: #FAFAFA;
+	padding: 10px;
+	
+}*/
+
+#event-title {
+	/*font-color: black;*/
+	
+	/*border-bottom:10px dotted;*/
+}
+
+#event-index-title {
+	/*font-color: black;*/
+	
+	font-size: 24px;
+
+	/*border-bottom:10px dotted;*/
+}
+
+#event-title-underline {
+	text-decoration: underline;
+}
+
+.event p {
+	margin: 3px 0px; 
+}
+
+.event:hover {
+
+}
+
+.event:hover a {
+	text-decoration: none;
+}
+
+.event .admin {
+	display: none;
+}
+
+.event:hover .admin {
+	display: inline;
+}
+
+.gray-text {
+	color: #919191;
+}
+#post-btn-margin {
+	margin-bottom: 12px;
+}
+
+.grey{
+  color: #a0a0a0
+}
